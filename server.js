@@ -29,7 +29,7 @@ app.post('/createUser', (req, res) => {
   newUser.local.password = req.body.password;
   newUser.save(err => {
     if (err) throw err;
-    else console.log('user nade')
+    else console.log('user made')
   });
   res.json({user : newUser, message : 'User was created'});
 });
